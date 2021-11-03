@@ -1,26 +1,32 @@
-<mxfile host="app.diagrams.net" modified="2021-11-03T09:07:55.248Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="NY58BAOQiSoRRyjyOIVc" version="15.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-03T09:21:19.827Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="6QU52NrHS0V6_Ie0TVjS" version="15.6.6" type="github">
   <diagram id="GBJeokmdrCC2gT9NmFFP" name="Chức năng tổng quan">
     <mxGraphModel dx="834" dy="419" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="V0e8xGoyZVRUdur8J4RT-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;fontColor=default;dashed=1;strokeColor=default;labelBackgroundColor=default;" edge="1" parent="1" source="V0e8xGoyZVRUdur8J4RT-1" target="V0e8xGoyZVRUdur8J4RT-2">
+        <mxCell id="V0e8xGoyZVRUdur8J4RT-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;fontColor=default;dashed=1;strokeColor=default;labelBackgroundColor=default;spacing=18;" edge="1" parent="1" source="V0e8xGoyZVRUdur8J4RT-1" target="V0e8xGoyZVRUdur8J4RT-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="V0e8xGoyZVRUdur8J4RT-1" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Quản loại sách&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="550" y="640" width="120" height="60" as="geometry" />
+        <mxCell id="V0e8xGoyZVRUdur8J4RT-1" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Quản loại sách&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;spacing=18;" vertex="1" parent="1">
+          <mxGeometry x="550" y="554" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="V0e8xGoyZVRUdur8J4RT-2" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Quản lý sách&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="550" y="740" width="120" height="60" as="geometry" />
+        <mxCell id="V0e8xGoyZVRUdur8J4RT-2" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Quản lý sách&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;spacing=18;" vertex="1" parent="1">
+          <mxGeometry x="550" y="670" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="V0e8xGoyZVRUdur8J4RT-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=default;fontSize=14;fontColor=default;strokeColor=default;" edge="1" parent="1" source="V0e8xGoyZVRUdur8J4RT-5" target="V0e8xGoyZVRUdur8J4RT-1">
+        <mxCell id="V0e8xGoyZVRUdur8J4RT-7" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Quản lý người mượn&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;spacing=18;" vertex="1" parent="1">
+          <mxGeometry x="160" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="V0e8xGoyZVRUdur8J4RT-9" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Quản lý phiếu mượn&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;spacing=18;" vertex="1" parent="1">
+          <mxGeometry x="354" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="V0e8xGoyZVRUdur8J4RT-13" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;labelBackgroundColor=default;fontSize=14;fontColor=default;strokeColor=default;fillColor=default;" edge="1" parent="1" source="V0e8xGoyZVRUdur8J4RT-11" target="V0e8xGoyZVRUdur8J4RT-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="V0e8xGoyZVRUdur8J4RT-5" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Quản lý thư viện&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="340" y="524" width="120" height="60" as="geometry" />
+        <mxCell id="V0e8xGoyZVRUdur8J4RT-11" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Quản lý nhân viên&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;spacing=18;" vertex="1" parent="1">
+          <mxGeometry x="160" y="554" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="V0e8xGoyZVRUdur8J4RT-7" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Quản lý người mượn&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="340" y="640" width="120" height="60" as="geometry" />
+        <mxCell id="V0e8xGoyZVRUdur8J4RT-14" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Đăng nhập&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontColor=default;labelBackgroundColor=default;spacing=18;" vertex="1" parent="1">
+          <mxGeometry x="354" y="554" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
