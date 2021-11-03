@@ -17,5 +17,8 @@ public class TestGitHub {
     public static void main(String[] args) {
         System.out.println("Hoàng Test Code");
     }
-    
+  //  h ông thấy code của tui rồi
+//            Cái nầy mình code xong nó có lưu lên github ko ông
+    //có ông 
+    //mỗi lần code xong ông vào githubdesktop update lên
 }
