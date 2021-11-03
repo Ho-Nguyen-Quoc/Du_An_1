@@ -7,7 +7,7 @@ package testgithub;
 
 /**
  *
- * @author Owner
+ * @author thinh
  */
 public class TestGitHub {
 
@@ -15,7 +15,7 @@ public class TestGitHub {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hoàng Test Code");
+        System.out.println("Code by Thinh");
     }
   //  h ông thấy code của tui rồi
 //            Cái nầy mình code xong nó có lưu lên github ko ông
