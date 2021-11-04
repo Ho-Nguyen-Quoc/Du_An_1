@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-04T12:11:20.687Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="tx7I6WMKiI9dBaZUqDt2" version="15.6.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-11-04T12:12:41.091Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="bgraUan3rRfGWPBVGsuZ" version="15.6.8" type="github" pages="2">
   <diagram id="-gtvZz-4FizqIAPCJomf" name="Quản lý nhân viên">
     <mxGraphModel dx="1019" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -37,6 +37,11 @@
         </mxCell>
         <mxCell id="a5GydQKUuEpF2zzsRQCY-47" style="edgeStyle=none;rounded=0;jumpSize=16;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontSize=14;endArrow=openThin;endFill=0;" edge="1" parent="45LFcATOggRiHST9xjTb-1" source="iIviMqFaydeCx0ee5sDL-13" target="a5GydQKUuEpF2zzsRQCY-45">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5GydQKUuEpF2zzsRQCY-48" value="include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;rotation=-21.5;" vertex="1" connectable="0" parent="a5GydQKUuEpF2zzsRQCY-47">
+          <mxGeometry x="0.5022" y="-3" relative="1" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="iIviMqFaydeCx0ee5sDL-13" value="QL kho sách" style="ellipse;whiteSpace=wrap;html=1;fontColor=default;strokeColor=default;fillColor=default;fontSize=14;" parent="45LFcATOggRiHST9xjTb-1" vertex="1">
           <mxGeometry x="240" y="310" width="120" height="60" as="geometry" />
