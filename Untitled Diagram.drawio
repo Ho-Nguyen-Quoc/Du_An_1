@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-04T12:20:14.018Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="-qNjJcPvW0T_pshRO4U4" version="15.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-04T12:20:29.924Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="d0mEDZNVTxGPbPtAuq68" version="15.6.8" type="github">
   <diagram id="ll0Q1ssErVSsv9aC2PjV" name="USE CASE">
     <mxGraphModel dx="1019" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -60,7 +60,7 @@
         </mxCell>
         <mxCell id="a5GydQKUuEpF2zzsRQCY-52" value="include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;rotation=-65;" vertex="1" connectable="0" parent="a5GydQKUuEpF2zzsRQCY-12">
           <mxGeometry x="-0.2929" y="-2" relative="1" as="geometry">
-            <mxPoint x="2" y="-6" as="offset" />
+            <mxPoint x="1" y="-11" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="a5GydQKUuEpF2zzsRQCY-42" style="rounded=0;jumpSize=16;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=14;endArrow=classicThin;endFill=1;dashed=1;" edge="1" parent="45LFcATOggRiHST9xjTb-1" source="iIviMqFaydeCx0ee5sDL-16" target="a5GydQKUuEpF2zzsRQCY-41">
@@ -68,7 +68,7 @@
         </mxCell>
         <mxCell id="a5GydQKUuEpF2zzsRQCY-54" value="include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;rotation=65;" vertex="1" connectable="0" parent="a5GydQKUuEpF2zzsRQCY-42">
           <mxGeometry x="-0.4326" y="-1" relative="1" as="geometry">
-            <mxPoint x="7" y="14" as="offset" />
+            <mxPoint x="12" y="14" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="iIviMqFaydeCx0ee5sDL-16" value="Xem dữ liệu" style="ellipse;whiteSpace=wrap;html=1;fontColor=default;strokeColor=default;fillColor=default;fontSize=14;" parent="45LFcATOggRiHST9xjTb-1" vertex="1">
