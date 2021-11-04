@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-04T12:01:07.691Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="A3mri6sGrbftoblgPAIn" version="15.6.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-11-04T12:01:14.902Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="fghx5N5xKJPYWYUG5lT0" version="15.6.8" type="github" pages="2">
   <diagram id="-gtvZz-4FizqIAPCJomf" name="Quản lý nhân viên">
     <mxGraphModel dx="1019" dy="519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -23,7 +23,7 @@
         <mxCell id="iIviMqFaydeCx0ee5sDL-8" value="Nhân Viên" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=default;strokeColor=default;fontColor=default;fontSize=14;" parent="45LFcATOggRiHST9xjTb-1" vertex="1">
           <mxGeometry x="100" y="440" width="50" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="a5GydQKUuEpF2zzsRQCY-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontSize=14;endArrow=classicThin;endFill=1;" edge="1" parent="45LFcATOggRiHST9xjTb-1" source="iIviMqFaydeCx0ee5sDL-12" target="iIviMqFaydeCx0ee5sDL-33">
+        <mxCell id="a5GydQKUuEpF2zzsRQCY-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;endArrow=classicThin;endFill=1;" edge="1" parent="45LFcATOggRiHST9xjTb-1" source="iIviMqFaydeCx0ee5sDL-12" target="iIviMqFaydeCx0ee5sDL-33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="iIviMqFaydeCx0ee5sDL-12" value="Đọc giả" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=default;strokeColor=default;fontColor=default;fontSize=14;" parent="45LFcATOggRiHST9xjTb-1" vertex="1">
