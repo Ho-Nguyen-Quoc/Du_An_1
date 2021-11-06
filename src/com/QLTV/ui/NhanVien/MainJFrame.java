@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.QLTV.ui;
+package com.QLTV.ui.NhanVien;
 
 import javax.swing.JFrame;
+import com.QLTV.ui.DocGia.MainFormJFrame;
 
 /**
  *
@@ -52,6 +53,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jSeparator5 = new javax.swing.JToolBar.Separator();
         jButton7 = new javax.swing.JButton();
+        jSeparator7 = new javax.swing.JToolBar.Separator();
         jButton10 = new javax.swing.JButton();
         jSeparator6 = new javax.swing.JToolBar.Separator();
         jButton1 = new javax.swing.JButton();
@@ -60,6 +62,8 @@ public class MainJFrame extends javax.swing.JFrame {
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
 
         jMenu3.setText("jMenu3");
         jPopupMenu1.add(jMenu3);
@@ -123,6 +127,11 @@ public class MainJFrame extends javax.swing.JFrame {
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/QLTV/icon/staff.png"))); // NOI18N
         jButton4.setText("   QL Nhân Viên");
         jButton4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jToolBar1.add(jButton4);
         jToolBar1.add(jSeparator3);
 
@@ -147,6 +156,7 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
         jToolBar1.add(jButton7);
+        jToolBar1.add(jSeparator7);
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/QLTV/icon/home.png"))); // NOI18N
         jButton10.setText("       HOME");
@@ -178,7 +188,14 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("Thông Tin");
+
+        jMenuItem6.setText("Hướng Dẫn");
+        jMenu2.add(jMenuItem6);
+
+        jMenuItem7.setText("Giới Thiệu");
+        jMenu2.add(jMenuItem7);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -256,6 +273,11 @@ public class MainJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+       // new MainFormJFrame().setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -311,6 +333,8 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JToolBar.Separator jSeparator1;
@@ -319,6 +343,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JToolBar.Separator jSeparator4;
     private javax.swing.JToolBar.Separator jSeparator5;
     private javax.swing.JToolBar.Separator jSeparator6;
+    private javax.swing.JToolBar.Separator jSeparator7;
     private javax.swing.JToolBar jToolBar1;
     private java.awt.Label label1;
     // End of variables declaration//GEN-END:variables

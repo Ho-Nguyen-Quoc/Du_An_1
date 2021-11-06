@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.QLTV.ui;
+package com.QLTV.ui.NhanVien;
 
 
 
@@ -103,7 +103,7 @@ public class QLSachDialog extends java.awt.Dialog {
         jLabel22.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setLayout(new java.awt.GridLayout());
+        jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/QLTV/icon/insert.png"))); // NOI18N
