@@ -3,10 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/thinh/Documents/GitHub/Du_An_1/src/testgithub/NewJFrame.java</file>
             <file>file:/C:/Users/thinh/Documents/GitHub/Du_An_1/src/testgithub/NewClass.java</file>
             <file>file:/C:/Users/thinh/Documents/GitHub/Du_An_1/src/testgithub/MsgBox.java</file>
             <file>file:/C:/Users/thinh/Documents/GitHub/Du_An_1/src/testgithub/TestGitHub.java</file>
+=======
+            <file>file:/D:/Du_An_1/src/com/QLTV/ui/NhanVien/MainJFrame.java</file>
+            <file>file:/D:/Du_An_1/src/com/QLTV/ui/NhanVien/QLNhanVienDialog.java</file>
+>>>>>>> ebfc0e8f1a14e88bb5b7f07d90e4082d2fd1051a
         </group>
     </open-files>
 </project-private>

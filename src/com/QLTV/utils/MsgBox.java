@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testgithub;
+package com.QLTV.utils;
 
 import java.awt.Component;
 import javax.swing.JOptionPane;
