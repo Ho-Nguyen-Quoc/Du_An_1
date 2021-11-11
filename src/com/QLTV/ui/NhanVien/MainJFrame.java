@@ -7,7 +7,14 @@ package com.QLTV.ui.NhanVien;
 
 import javax.swing.JFrame;
 import com.QLTV.ui.DocGia.MainFormJFrame;
+import com.QLTV.ui.Main.LoadingJdialog;
+import com.QLTV.utils.MsgBox;
 import com.QLTV.utils.XImage;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import javax.swing.Timer;
 
 /**
  *
@@ -20,10 +27,7 @@ public class MainJFrame extends javax.swing.JFrame {
      */
     public MainJFrame() {
         initComponents();
-        //this.setUndecorated(true);
-        this.setLocationRelativeTo(null);
-        setTitle("Love Pink - Quản lý thư viện");
-        this.setIconImage(XImage.getAppIcon());
+        init();
     }
 
     /**
@@ -59,8 +63,9 @@ public class MainJFrame extends javax.swing.JFrame {
         jSeparator7 = new javax.swing.JToolBar.Separator();
         jButton10 = new javax.swing.JButton();
         jSeparator6 = new javax.swing.JToolBar.Separator();
-        jButton6 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
+        lblAlarm = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
@@ -174,12 +179,6 @@ public class MainJFrame extends javax.swing.JFrame {
         jToolBar1.add(jButton10);
         jToolBar1.add(jSeparator6);
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/QLTV/icon/logout.png"))); // NOI18N
-        jButton6.setText("Exit");
-        jButton6.setMaximumSize(new java.awt.Dimension(105, 51));
-        jButton6.setMinimumSize(new java.awt.Dimension(105, 51));
-        jToolBar1.add(jButton6);
-
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/QLTV/icon/list.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -187,6 +186,18 @@ public class MainJFrame extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+
+        btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/QLTV/icon/logout.png"))); // NOI18N
+        btnExit.setText("Exit");
+        btnExit.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
+
+        lblAlarm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/QLTV/icon/alarm-clock.png"))); // NOI18N
+        lblAlarm.setText("20:01:02");
 
         jMenu1.setText("Hệ Thống");
 
@@ -225,8 +236,16 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(lblAlarm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnExit, javax.swing.GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -249,8 +268,11 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblAlarm, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
@@ -288,6 +310,13 @@ public class MainJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        // TODO add your handling code here:
+        if(MsgBox.confirm(this, "Bạn có muốn thoát ứng dụng ?")==true){
+            System.exit(0);
+        }
+    }//GEN-LAST:event_btnExitActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -324,13 +353,13 @@ public class MainJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnExit;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
@@ -357,5 +386,23 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JToolBar.Separator jSeparator7;
     private javax.swing.JToolBar jToolBar1;
     private java.awt.Label label1;
+    private javax.swing.JLabel lblAlarm;
     // End of variables declaration//GEN-END:variables
+
+    private void init() {
+        //this.setUndecorated(true);
+        this.setLocationRelativeTo(null);
+        setTitle("Love Pink - Quản lý thư viện");
+        this.setIconImage(XImage.getAppIcon());
+        new LoadingJdialog(this, true).setVisible(true);
+        new Timer(10, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Date now = new Date();
+                SimpleDateFormat formater = new SimpleDateFormat("hh:mm:ss a");
+                String text = formater.format(now);
+                lblAlarm.setText(text);
+            }
+        }).start();
+    }
 }
