@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.QLTV.ui.Main;
+package com.QLTV.ui.NhanVien;
 
 /**
  *
  * @author Owner
  */
-public class LoginDocGia extends java.awt.Dialog {
+public class LoginDialog extends java.awt.Dialog {
 
     /**
-     * Creates new form LoginDocGia
+     * Creates new form LoginDialog
      */
-    public LoginDocGia(java.awt.Frame parent, boolean modal) {
+    public LoginDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -50,7 +50,7 @@ public class LoginDocGia extends java.awt.Dialog {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                LoginDocGia dialog = new LoginDocGia(new java.awt.Frame(), true);
+                LoginDialog dialog = new LoginDialog(new java.awt.Frame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     public void windowClosing(java.awt.event.WindowEvent e) {
                         System.exit(0);

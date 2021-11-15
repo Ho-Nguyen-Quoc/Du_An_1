@@ -1,31 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.QLTV.ui.NhanVien;
+import com.QLTV.unity.Sach;
+import java.util.List;
+import javax.swing.table.DefaultTableModel;
+import com.QLTV.DAO.SachDAO;
 
-
-
-/**
- *
- * @author Owner
- */
 public class QLSachDialog extends java.awt.Dialog {
 
-    /**
-     * Creates new form gioithieuDialog
-     */
     public QLSachDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         this.init();
         this.setSize(1245,680);
         this.setLocation(420, 240);
+        filltable();
         
-        //this.setLocationRelativeTo(null);
-    }
-
+        
+        }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -63,7 +53,7 @@ public class QLSachDialog extends java.awt.Dialog {
         jLabel23 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tbl = new javax.swing.JTable();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setUndecorated(true);
@@ -149,18 +139,26 @@ public class QLSachDialog extends java.awt.Dialog {
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel23.setText("Tìm Kiếm");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Mã Sách", "Tên Sách", "Nhà Xuất Bản", "Năm Xuất Bảni", "Thể Loại", "Giá", "Dãy", "Ô", "Mô Tả", "Hình"
+                "Mã Sách", "Tên Sách", "Nhà Xuất Bản", "Năm Xuất Bảni", "Tác Giả", "Thể Loại", "Giá", "Dãy", "Ô", "Mô Tả", "Hình"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tbl);
+        if (tbl.getColumnModel().getColumnCount() > 0) {
+            tbl.getColumnModel().getColumn(0).setPreferredWidth(20);
+            tbl.getColumnModel().getColumn(5).setPreferredWidth(20);
+            tbl.getColumnModel().getColumn(6).setPreferredWidth(20);
+            tbl.getColumnModel().getColumn(7).setPreferredWidth(10);
+            tbl.getColumnModel().getColumn(8).setPreferredWidth(10);
+            tbl.getColumnModel().getColumn(9).setPreferredWidth(20);
+        }
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -216,7 +214,9 @@ public class QLSachDialog extends java.awt.Dialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel22)
                 .addGap(123, 123, 123))
-            .addComponent(jScrollPane1)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -271,7 +271,8 @@ public class QLSachDialog extends java.awt.Dialog {
                             .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
                             .addComponent(jTextField10))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(271, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -351,7 +352,6 @@ public class QLSachDialog extends java.awt.Dialog {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
@@ -362,11 +362,39 @@ public class QLSachDialog extends java.awt.Dialog {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JTable tbl;
     // End of variables declaration//GEN-END:variables
   private void init() {
 //        this.setLocationRelativeTo(null);
 //         this.setIconImage(XImage.getappicon());
-   }     
+   }
+  SachDAO dao = new SachDAO();
+  void filltable(){
+      DefaultTableModel model = (DefaultTableModel) tbl.getModel();
+      model.setRowCount(0);
+      try {
+          List<Sach> list = dao.selectAll();
+          for(Sach s : list){
+              Object[] row = {
+              s.getMaSach(),
+              s.getTenSach(),
+              s.getNhaXB(),
+              s.getNamXB(),
+              s.getTacGia(),
+              s.getTheLoai(),
+              s.getGia(),
+              s.getDaySach(),
+              s.getO(),
+              s.getMoTa(),
+              s.getAnh()
+          };
+              model.addRow(row);
+          }
+      } catch (Exception e) {
+             //JOptionPane.showMessageDialog(this, "Looix");
+
+      }
+  }
 
   
 }
